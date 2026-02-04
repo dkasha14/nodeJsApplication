@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nodejsapp-uat
+  labels:
+    app: nodejsapp
+    costcenter: dvsaidevops
+  namespace: nodejsapp-uat
+---
