@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejsapp
-  namespace: nodejsapp-prod
+  name: NodeJs-app
+  namespace: NodeJs-app-prod
   labels:
-    app: nodejsapp
-    costcenter: dvsaidevops
+    app: NodeJs-app
+    costcenter: aidevops
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nodejsapp
+      app: NodeJs-app
   template:
     metadata:
       labels:
-        app: nodejsapp
+        app: NodeJs-app
     spec:
       containers:
-      - name: nodejsapp
-        image: nodejsapp:v1.0.0
+      - name: NodeJs-app
+        image: NodeJs-app:v2.0.0
         ports:
         - containerPort: 8080
 ---

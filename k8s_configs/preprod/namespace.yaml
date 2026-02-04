@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: nodejsapp-preprod
+  name: NodeJs-app-preprod
   labels:
-    app: nodejsapp
-    costcenter: dvsaidevops
-  namespace: nodejsapp-preprod
+    app: NodeJs-app
+    costcenter: aidevops
+  namespace: NodeJs-app-preprod
 ---
