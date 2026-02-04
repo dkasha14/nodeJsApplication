@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodejsapp
+  namespace: nodejsapp-sit
+  labels:
+    app: myapp
+    costcenter: dvsaidevops
+spec:
+  type: ClusterIP
+  selector:
+    app: nodejsapp
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+---
